@@ -1,0 +1,14 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f5f5f5;
+  }
+  h1, h2 {
+    color: #333;
+  }
+  .feed {
+    background: white;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  

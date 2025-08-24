@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head><title>Upload Post</title></head>
+<body>
+  <h2>Upload Image/Video</h2>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="media" required>
+    <button type="submit">Upload</button>
+  </form>
+
+  {% if media %}
+    <h3>Generated Caption:</h3>
+    <img src="{{ url_for('static', filename='uploads/' + media) }}" width="300">
+    <p>{{ caption }}</p>
+  {% endif %}
+</body>
+</html>

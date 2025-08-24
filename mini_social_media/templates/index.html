@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mini Social</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Social Media Platform</h1>
+  <a href="{{ url_for('post') }}">Upload Post</a> |
+  <a href="{{ url_for('chat') }}">Chat</a>
+
+  <div class="feed">
+    <p>No live posts (static demo)</p>
+  </div>
+</body>
+</html>
